@@ -4,15 +4,11 @@ function Palindrom(str) {
         rev += str[i]
 
     }
-    if (rev == str) {
-        return true
-    } else {
-        return false
-    }
+    (rev==str)? console.log(`this is plaindrom `): console.log(`this isn't palindrom`)
     return rev
 }
 
-console.log(Palindrom('sam'))
+// console.log(Palindrom('sam'))
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 function Palindrome(str) {
     let left = 0;
@@ -26,7 +22,7 @@ function Palindrome(str) {
     return true;
 }
 
-console.log(Palindrome(1231)); // false
+// console.log(Palindrome(1231)); // false
 
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -34,10 +30,10 @@ console.log(Palindrome(1231)); // false
 
 // (For small or simple strings)
 
-const Palindrome = str =>
+const Palindrome1 = str =>
     str.toLowerCase() === [...str.toLowerCase()].reverse().join('');
 
-console.log(Palindrome("Madam"))
+// console.log(Palindrome("Madam"))
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -56,7 +52,7 @@ function Palindrome(str) {
     return true;
 }
 
-console.log(Palindrome("A man, a plan, a canal: Panama")); // true
+// console.log(Palindrome("A man, a plan, a canal: Panama")); // true
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -70,12 +66,14 @@ function isPalindrome(value) {
         return check(left + 1, right - 1);
     }
 
-    return check(0, str.length-1)
+    return check(0, str.length - 1);
 }
+
+console.log(isPalindrome(1221));
 
 // ------------------------------------------------------------------------------
 
-const isPalindrome = (v) =>
+const isPalindrome0 = (v) =>
   (s = String(v).toLowerCase().replace(/[^a-z0-9]/g, '')) ===
   [...s].reverse().join('');
-  console.log(isPalindrome("_Level_"));
+//   console.log(isPalindrome("_Level_"));
