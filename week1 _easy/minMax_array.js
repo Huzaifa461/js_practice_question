@@ -9,11 +9,15 @@ console.log(mini , maxi)
 // ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 let obj={
+    
     name: "sam",
-    age : 12
+    details : {age : 12}
+   
+
 }
 
-let obj1 = {...obj}  
+let obj1 = {...obj} 
+// wrong ❌ [...obj]  
 // the spread operator (...) inside an object literal {} copies the own enumerable properties(properties which can be iterable) of obj into a new object. Unlike [...obj] (which requires iterables), {...obj} works because objects can be spread into other objects.
 
 obj1.details.age = 20;
@@ -29,7 +33,7 @@ let obj0 = { name: "sam" };
 // Spread → always creates a new object
 let copy1 = { ...obj };
 copy1.name = "alex";
-console.log(obj.name); // "sam" (original unchanged)
+console.log(obj0.name); // "sam" (original unchanged)
 
 // Object.assign → mutates target
 let copy2 = Object.assign(obj, { age: 12 });
