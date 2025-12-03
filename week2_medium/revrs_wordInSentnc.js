@@ -23,3 +23,9 @@ function reverse_words(str){
 }
 
 reverse_words('hello sam')
+
+
+// In this question i learn about map and filter function
+
+
+
