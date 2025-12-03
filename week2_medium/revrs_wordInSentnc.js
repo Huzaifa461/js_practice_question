@@ -1,13 +1,11 @@
 function reverse_words(str){
-    // let result = str.split('').reverse().join().split(' ').reverse().join(' ')
+    
 
     let arr= str.split(' ')
     let result;
    
-    // result=arr.filter( i => {
-    //    arr[i].reverse()
-    //     return  true
-    // })
+    
+  
     result= arr.map( str=> {
         return  str.split('').reverse().join('')
        
@@ -16,6 +14,15 @@ function reverse_words(str){
     // or
 
     //  result= arr.map( str=>  str.split('').reverse().join(''))
+
+    // or
+
+    // result=arr.filter( i => {
+    //    arr[i].reverse()
+    //     return  true})
+//    or
+
+    // let result = str.split('').reverse().join().split(' ').reverse().join(' ')
 
     
     console.log(result)
