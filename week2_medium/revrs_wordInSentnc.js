@@ -6,7 +6,7 @@ function reverse_words(str){
    
     
   
-    result= arr.map( str=> {
+    arr= arr.map( str=> {
         return  str.split('').reverse().join('')
        
     })
@@ -25,7 +25,8 @@ function reverse_words(str){
     // let result = str.split('').reverse().join().split(' ').reverse().join(' ')
 
     
-    console.log(result)
+   result= arr.join(' ')
+   console.log(result)
 
 }
 
